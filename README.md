@@ -1,8 +1,15 @@
-# r-sketches
+# r-skethes
 
-A set of [R: The R Project for Statistical Computing](https://www.r-project.org/) script that filter text-object input from the pipeline(stdin) and return text-object.
+```markdown
+>  ____        ____  _  _  ____  _____   ___  _   _  ____  ____ 
+> |  _ \ ____ /  __)| |/ )| ___)|_   _| / __)| |_| || ___)/  __)
+> |    /(____)\__  \|   ( | __)   | |  ( (__ |  _  || __) \__  \
+> |_|\_)      (____/|_|\_)|____)  |_|   \___)|_| |_||____)(____/
+```
 
-**Note**: This repository contains experimental PowerShell scripts for prototyping and exploring new ideas. Although these scripts have been run by the author, they are not intended for production use and may be unstable or incomplete.
+A set of [R: The R Project for Statistical Computing](https://www.r-project.org/) that filter text-object input from the pipeline(stdin) and return text-object.
+
+**Note**: This repository contains experimental R scripts for prototyping and exploring new ideas. Although these scripts have been run by the author, they are not intended for production use and may be unstable or incomplete.
 
 - For use in UTF-8 Japanese environments on windows.
 - For my personal work and hobby use.
@@ -32,7 +39,7 @@ script list:
 2. Set terminal input/output encoding to `UTF-8`
     - The functions expect `UTF-8` encoded input, so if you want to run them on PowerShell in a Japanese environment, make sure the encoding is ready in advance.
     - if you use PowerShell, run the following dot sourcing command
-        - `. path/to/r-sketches/operator.ps1`
+        - `. path/to/rlang-mocks/operator.ps1`
 
 関数群はUTF-8エンコードされた入力を期待するので、
 関数実行前にカレントプロセスのエンコードを`UTF-8`にしておくとよい。
@@ -53,7 +60,7 @@ if ($IsWindows){
 ```powershell
 # for PowerShell
 # or sourcing dot files
-. path/to/r-sketches/operator.ps1
+. path/to/rlang-mocks/operator.ps1
 ```
 
 ## Description of each functions
