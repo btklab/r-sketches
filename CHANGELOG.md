@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - NA
 
+## [0.2.0] - 2025-10-05
+
+- Added [Generate-CodeName.R][]
+
 ## [0.1.0] - 2025-02-21
 
 - Init
@@ -21,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [rmatcalc.R]: src/rmatcalc.R
 [sketch.R]: src/sketch.R
 
-
+[Generate-CodeName]: src/Generate-CodeName.R
 
 [unreleased]: https://github.com/btklab/r-sketches/compare/0.1.0..HEAD
 [0.1.0]: https://github.com/btklab/r-sketches/releases/tag/0.1.0
