@@ -23,7 +23,7 @@ script list:
 (cat README.md | sls '^#### \[[^[]+\]').Matches.Value.Replace('#### ','') -join ", " | Set-Clipboard
 ```
 
-- [rcalc.R], [rmatcalc.R], [sketch.R]
+- [rcalc.R], [rmatcalc.R], [sketch.R], [Generate-CodeName.R]
 
 
 主に現実世界の不定形文字列に対してパターンマッチング処理を行うためのフィルタ群。基本的な入力として、UTF-8＋半角スペース区切り＋行指向のパイプライン経由文字列データ（テキストオブジェクト）を期待する。
@@ -39,7 +39,7 @@ script list:
 2. Set terminal input/output encoding to `UTF-8`
     - The functions expect `UTF-8` encoded input, so if you want to run them on PowerShell in a Japanese environment, make sure the encoding is ready in advance.
     - if you use PowerShell, run the following dot sourcing command
-        - `. path/to/rlang-mocks/operator.ps1`
+        - `. path/to/r-sketches/operator.ps1`
 
 関数群はUTF-8エンコードされた入力を期待するので、
 関数実行前にカレントプロセスのエンコードを`UTF-8`にしておくとよい。
@@ -60,7 +60,7 @@ if ($IsWindows){
 ```powershell
 # for PowerShell
 # or sourcing dot files
-. path/to/rlang-mocks/operator.ps1
+. path/to/r-sketches/operator.ps1
 ```
 
 ## Description of each functions
@@ -400,6 +400,13 @@ Rscript sketch.R -i a.png --shadow 0.4
 # Case3: Neko. objects have unclear edges/outlines
 Rscript sketch.R -i a.png --smooth 0
 ```
+
+### Misc
+
+#### [Generate-CodeName.R]  - A wrapper script for the 'codename' package.
+
+[Generate-CodeName.R]: src/Generate-CodeName.R
+
 
 ## CREDITS
 
